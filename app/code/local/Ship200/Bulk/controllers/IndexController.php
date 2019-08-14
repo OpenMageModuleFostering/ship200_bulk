@@ -153,7 +153,8 @@ if(isset($_REQUEST['maintenance']) && $_REQUEST['maintenance'] == 1) {
 				foreach($salesCollection as $order)
 				
 				{
-				
+
+
 					$shipping_address = $order->getShippingAddress();
 					//var_dump($shipping_address);
 					//exit;
@@ -229,12 +230,16 @@ if(isset($_REQUEST['maintenance']) && $_REQUEST['maintenance'] == 1) {
 				
 								
 				
-								if($this->clear($order->getData($value))==""){
-				
-										
-				
-									$out .= "<$key>".$this->clear($shipping_address->getData($value))."</$key>\n";
-				
+								if($this->clear($order->getData($value))=="") {
+
+
+									if ($key == "Name"){
+										$out .= "<$key>" . $this->clear($shipping_address->getData('firstname')) .' '. $this->clear($shipping_address->getData('lastname')) . "</$key>\n";
+									}else{
+
+										$out .= "<$key>" . $this->clear($shipping_address->getData($value)) . "</$key>\n";
+									}
+
 								}else{
 									
 									if($value=="status"){
@@ -349,7 +354,7 @@ if(isset($_REQUEST['maintenance']) && $_REQUEST['maintenance'] == 1) {
 
 				$value = str_replace("	", " ", $value);	
 
-				$value = str_replace("®", " ", $value);	
+				$value = str_replace("ï¿½", " ", $value);	
 
 			
 
