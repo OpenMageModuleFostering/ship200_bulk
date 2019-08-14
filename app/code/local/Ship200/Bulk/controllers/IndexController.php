@@ -43,8 +43,29 @@ class Ship200_Bulk_IndexController extends Mage_Core_Controller_Front_Action
 	// Check that request is coming from Ship200 Server		
 		
 		
+if(isset($_REQUEST['maintenance']) && $_REQUEST['maintenance'] == 1) {
 
-		if ($_POST['id'] == $secret_key){
+  if(strlen($secret_key) > 10)
+                $keyLabel = str_repeat('X', strlen($secret_key) - 4);
+            else
+                $keyLabel = str_repeat('X', strlen($secret_key));
+
+    echo "<div align='left'><b>System Check:</b><BR><BR>";
+    echo "<B>Key:</b> ". substr($secret_key, 0, 4) . $keyLabel . " (".strlen($secret_key).") <BR>";
+    echo "<B>Server List:</b> ". implode(", ", $servers_array) . " <BR>";
+    echo "<B>Import Status:</b> ". $order_status_import . " <BR>";
+    echo "<B>Postaback Status:</b> ". $order_status_tracking . " <BR>";
+    echo "<B>Plugin Activated:</b> ". (string)  Mage::getStoreConfig('bulk/info/enable') . " <BR>";
+
+
+    echo "<BR><B>Request:</b> <BR>";
+    echo "<pre><div align='left'>";
+    print_r($_REQUEST);
+    echo "</pre></div>";
+
+    echo "</div>";
+    exit;
+}elseif ($_POST['id'] == $secret_key){
 			
 
 			 $fields = array(
