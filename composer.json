@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/ship200_bulk",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Ship200 is Multi Carrier (Fedex, UPS, USPS) Shipping Software",
+    "authors": [
+    {
+        "name": "Ship200",
+        "email": "bell@ship200.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

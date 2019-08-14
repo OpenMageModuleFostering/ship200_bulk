@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+    <acl>
+
+        <resources>
+
+            <admin>
+
+                <children>
+
+                    <system>
+
+                        <children>
+
+                            <config>
+
+                                <children>
+
+                                    <bulk>
+
+                                        <title>Ship200 Bulk Labels options</title>
+
+                                    </bulk>
+
+                                </children>
+
+                            </config>
+
+                        </children>
+
+                    </system>
+
+                </children>
+
+            </admin>
+
+        </resources>
+
+    </acl>
+
+</config>

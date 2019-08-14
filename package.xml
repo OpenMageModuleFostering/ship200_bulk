@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>ship200_bulk</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Ship200 is Multi Carrier (Fedex, UPS, USPS) Shipping Software</summary>
+    <description>Ship200 is Multi Carrier (Fedex, UPS, USPS) Shipping Software which allows you to print shipping labels in bulk or individually and integrate process of creating labels directly into you Magento.&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+This Plugin connects your Magento store to Ship200, and adds the ability to download new orders to Ship200 for creating shipping labels in bulk.&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+Demo:&#xD;
+&lt;a href="https://www.youtube.com/watch?v=rZdC1f1WIxU"&gt;https://www.youtube.com/watch?v=rZdC1f1WIxU&lt;/a&gt;&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+Visit Us at &lt;a href="http://www.Ship200.com"&gt;www.Ship200.com&lt;/a&gt;</description>
+    <notes>nothing</notes>
+    <authors><author><name>Ship200</name><user>Ship200</user><email>bell@ship200.com</email></author></authors>
+    <date>2014-07-21</date>
+    <time>13:31:26</time>
+    <contents><target name="magelocal"><dir name="Ship200"><dir name="Bulk"><dir name="Helper"><file name="Data.php" hash="5501e6608f0a1cef651ae2a89cee1bcb"/></dir><dir name="controllers"><file name="IndexController.php" hash="dc987182ab3ad91767c3396cbcda6ac7"/></dir><dir name="etc"><file name="adminhtml.xml" hash="a3457b8da52d66fda1e386ed0d7ca078"/><file name="config.xml" hash="de37b7428ff1ef8a759a913a742f48a2"/><file name="system.xml" hash="9f6a029173997f8a69621913890fe487"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ship200_Bulk.xml" hash="8d72455b0d5fd4b13d19a03e1ee70b89"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

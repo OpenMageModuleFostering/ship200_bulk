@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<config>
+
+  <modules>
+
+    <Ship200_Bulk>
+
+      <active>true</active>
+
+      <codePool>local</codePool>
+
+    </Ship200_Bulk>
+
+  </modules>
+
+</config>
+

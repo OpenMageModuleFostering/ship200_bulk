@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<config>
+
+    <tabs>
+
+        <!--Here is the tabs definition-->
+
+        <bulksetting translate="label" module="bulk">
+
+            <label>Ship200 Bulk Labels</label>
+
+            <sort_order>20</sort_order>
+
+            <sort_order>800</sort_order>
+
+            <show_in_default>1</show_in_default>
+
+            <show_in_website>1</show_in_website>
+
+            <show_in_store>1</show_in_store>
+
+        </bulksetting>
+
+    </tabs>
+
+    <sections>
+
+        <!--Here are the sections definition-->
+
+        <bulk translate="label" module="bulk">
+
+            <class>separator-top</class>
+
+            <label>Ship200 Bulk Processing Settings</label>
+
+            <tab>bulksetting</tab>
+
+            <sort_order>800</sort_order>
+
+            <show_in_default>1</show_in_default>
+
+            <show_in_website>1</show_in_website>
+
+            <show_in_store>1</show_in_store>
+
+            <groups>
+
+                <!--Here are the groups definitions-->
+
+                <info translate="label">
+
+                    <label>Ship200 Bulk Labels General information</label>
+
+                    <frontend_type>text</frontend_type>
+
+                    <sort_order>1</sort_order>
+
+                    <show_in_default>1</show_in_default>
+
+                    <show_in_website>1</show_in_website>
+
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+
+                        <!--Here are the fields definition-->
+
+                        <enable translate="label">
+
+                            <label>Enable</label>
+
+                            <frontend_type>select</frontend_type>
+
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+
+							<sort_order>0</sort_order>
+
+							<show_in_default>1</show_in_default>
+
+							<show_in_website>1</show_in_website>
+
+							<show_in_store>1</show_in_store>
+
+                        </enable>
+						<appkey translate="label">
+
+                            <label>Ship200 Secret Key</label>
+
+                            <frontend_type>text</frontend_type>
+
+                            <sort_order>1</sort_order>
+
+                            <show_in_default>1</show_in_default>
+
+                            <show_in_website>1</show_in_website>
+
+                            <show_in_store>1</show_in_store>
+
+                            <comment><![CDATA[1. Login to your Ship200.com Account </br> 2. On Top Menu click "Bulk Processing", then "Add/Remove Store", then "Setup Import From Magento" 
+							</br> 3. Copy/Paste secret key from Ship200 to "key" field above</br> 4. Change domain name to "your domain" <BR> in "Path to Ship200 Comunicator Script" Field, then hit Save Changes]]></comment>
+
+                        </appkey>
+						
+						<order_status_import translate="label">
+
+                            <label>Order Status For Import</label>
+
+                            <frontend_type>select</frontend_type>
+
+							<source_model>adminhtml/system_config_source_order_status</source_model>
+
+							<sort_order>2</sort_order>
+
+							<show_in_default>1</show_in_default>
+
+							<show_in_website>1</show_in_website>
+
+							<show_in_store>1</show_in_store>
+
+                        </order_status_import>
+						
+						
+						<order_status_tracking translate="label">
+
+                            <label>Order Status For Update With Tracking</label>
+
+                            <frontend_type>select</frontend_type>
+
+							<source_model>adminhtml/system_config_source_order_status</source_model>
+
+							<sort_order>3</sort_order>
+
+							<show_in_default>1</show_in_default>
+
+							<show_in_website>1</show_in_website>
+
+							<show_in_store>1</show_in_store>
+
+                        </order_status_tracking>
+
+						<!--<notify_customer translate="label">
+
+                            <label>Notify Customer</label>
+
+                            <frontend_type>select</frontend_type>
+
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+
+							<sort_order>4</sort_order>
+
+							<show_in_default>1</show_in_default>
+
+							<show_in_website>1</show_in_website>
+
+							<show_in_store>1</show_in_store>
+
+                        </notify_customer>
+-->
+						
+
+						
+
+						<!--<carrier translate="label">
+
+                            <label>Ship200 Carrier Service Codes</label>
+
+                            <frontend_type>select</frontend_type>
+
+                            <source_model>onebyone/source_carrier</source_model>
+
+                            <sort_order>170</sort_order>
+
+                            <show_in_default>1</show_in_default>
+
+                            <show_in_website>1</show_in_website>
+
+                            <show_in_store>1</show_in_store>
+
+                            <comment><![CDATA[For Ship200 Carrier Service Codes]]></comment>
+
+                        </carrier>--> 
+
+						
+
+                    </fields>
+
+                </info>
+
+            </groups>
+
+        </bulk>
+
+    </sections>
+
+</config>

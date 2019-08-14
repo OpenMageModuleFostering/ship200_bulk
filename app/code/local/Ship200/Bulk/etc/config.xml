@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<config>
+
+	<modules>
+
+		<Ship200_Bulk>
+
+			<version>0.1.0</version>
+
+		</Ship200_Bulk>
+
+	</modules>
+
+	<global>
+
+		<!--<blocks>
+
+			<onebyone>
+
+				<class>Shiptwohundred_Onebyone_Block</class>
+
+			</onebyone>
+
+			<adminhtml>
+
+                <rewrite>
+
+                    <sales_order_view>Shiptwohundred_Onebyone_Block_Adminhtml_Sales_Order_View</sales_order_view>
+
+                </rewrite>
+
+            </adminhtml>
+
+		</blocks>-->
+
+		<helpers>
+
+			<bulk>
+
+				<class>Ship200_Bulk_Helper</class>
+
+			</bulk>
+
+		</helpers>
+
+		<!--<models>
+
+			<onebyone>
+
+				<class>Shiptwohundred_Onebyone_Model</class>
+
+			</onebyone>
+
+		</models>-->
+
+	</global>
+
+	<!--<adminhtml>
+
+		<layout>
+
+			<updates>
+
+				<Ship200_Bulk>
+
+					<file>ship200_bulk.xml</file>
+
+				</Ship200_Bulk>
+
+			</updates>
+
+		</layout>
+
+	</adminhtml>-->
+
+	<frontend>
+
+		<routers>
+
+			<bulk>
+
+				<use>standard</use>
+
+				<args>
+
+					<module>Ship200_Bulk</module>
+
+					<frontName>bulk</frontName>
+
+				</args>
+
+			</bulk>
+
+		</routers>
+
+	</frontend>
+	
+	
+	<default>
+        <bulk>
+            <info>
+				<order_status_import>pending</order_status_import>
+				<order_status_tracking>complete</order_status_tracking>
+			</info>
+		</bulk>
+	</default>	
+
+</config>
