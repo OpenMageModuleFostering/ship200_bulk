@@ -3,11 +3,11 @@
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
-    "description": "Ship200 is Multi Carrier (Fedex, UPS, USPS) Shipping Software",
+    "description": "Ship200 Multi Carrier Shipping Software - Bulk Processing",
     "authors": [
     {
         "name": "Ship200",
-        "email": "bell@ship200.com"
+        "email": "support@ship200.com"
     }
 ],
     "suggest": {
