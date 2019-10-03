@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/ship200_bulk",
+    "name": "OpenMageModuleFostering\/ship200_bulk",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Ship200 Multi Carrier Shipping Software - Bulk Processing",
     "authors": [
-    {
-        "name": "Ship200",
-        "email": "support@ship200.com"
-    }
-],
+        {
+            "name": "Ship200",
+            "email": "support@ship200.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
