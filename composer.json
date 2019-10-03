@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/ship200_bulk",
+    "name": "openmage-module-fostering\/ship200_bulk",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Ship200 Multi Carrier Shipping Software - Bulk Processing",
     "authors": [
